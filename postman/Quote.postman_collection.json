@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "523f5e2a-e7eb-4f47-8885-85d82e0863a1",
+		"name": "Quote",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Quote: Create New Quote",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"marketingTitle\": \"\",\n    \"imageURL\": \"\",\n    \"advantages\": [],\n    \"postalCodes\": [],\n    \"ageLimit\": \"\"\n}"
+				},
+				"url": {
+					"raw": "{{HOST}}:{{PORT}}/quotes/new",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"quotes",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Quote: Find Quotes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"zipCode\": \"\",\n    \"age\": \"\",\n    \"status\": {\n        \"isMarried\": false,\n        \"isCurrentlyInsured\": false,\n        \"isOwnMultipleVehicles\": false,\n        \"isOwnHome\": false\n    }\n    \n}"
+				},
+				"url": {
+					"raw": "{{HOST}}:{{PORT}}/quotes/find",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"quotes",
+						"find"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
