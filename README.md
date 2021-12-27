@@ -29,7 +29,7 @@
 
 ## About The Application
 
-This server-side application is is part of the DXC Book Store assignment.
+This server-side application is is part of the SpoTower insurance assignment.
 
 It is built with Node.js and Express Framework with Javascript. In addition, the application's database is MongoDB with the use of an ODM like Mongoose.
 
